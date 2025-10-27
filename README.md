@@ -1,4 +1,3 @@
-# github-pages
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,6 +69,7 @@ function bgColorChange_a() {
 	학점<input type ="text" id = "grade" name = "text"><br>
 	<button type="button" onclick="process()">제출</button>
 </form>
+<div id ="main"></div>
 <script>
 function process(){
 	let name = document.getElementById("name");
@@ -82,7 +82,7 @@ function process(){
 	if(grade.value== "A"){
 		newDIV.style.backgroundColor= "green";
 		newDIV.innerHTML+= " 적격판정"
-	} else{
+	}else{
 		newDIV.style.backgroundColor= "red";
 		newDIV.innerHTML+= " 부적격판정"
 	}
